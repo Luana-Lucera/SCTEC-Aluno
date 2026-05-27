@@ -1,0 +1,133 @@
+/* Remove margens e espaçamentos padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração geral da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Faixa amarela superior */
+.faixa-receitas {
+    width: 100%;
+    height: 110px;
+    background-color: #f6c400;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+}
+
+/* Texto MENU à esquerda */
+.lado-esquerdo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6a0dad;
+}
+
+/* Palavra receitas no centro */
+.centro {
+    font-size: 60px;
+    font-weight: bold;
+    color: #b1008a;
+}
+
+/* Botão BUSCAR à direita */
+.lado-direito {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6a0dad;
+
+    background-color: #d4a900;
+    padding: 12px 28px;
+    border-radius: 6px;
+}
+
+/* Caixa branca principal da receita */
+main {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+/* Cinco estrelas amarelas */
+.avaliacao {
+    color: #ffc400;
+    font-size: 36px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+
+/* Título principal */
+h1 {
+    color: #5a2d0c;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+/* Imagem da receita */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+/* Subtítulos */
+h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #b1008a;
+    font-size: 26px;
+}
+
+/* Listas de ingredientes e modo de preparo */
+ul,
+ol {
+    margin-left: 25px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* Espaçamento entre itens da lista */
+li {
+    margin-bottom: 6px;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 700px) {
+    .faixa-receitas {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .centro {
+        font-size: 42px;
+    }
+
+    main {
+        width: 92%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .avaliacao {
+        font-size: 30px;
+    }
+}
